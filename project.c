@@ -67,7 +67,36 @@ int main(){
     addUserToDb(user1, userDatabase, userPerLetter, 0);
     // addUserToDb(user2, userDatabase, userPerLetter, 0);
     // addUserToDb(user3, userDatabase, userPerLetter, 25);
-
     createFile(userDatabase,userPerLetter);
+    //création du menu (a compléter pendant l'avancer du projet
+    int features;
+    printf("\t\t\tHello ! What do you want to do ?\n\n");
+    printf("These are some users you could love to follow :");
+    printf("\tuser1");
+    printf("\tuser2");
+    printf("\tuser3");
+    printf("\tuser4");
+    printf("\tuser5\n\n");
+
+    printf("You want a user to follow another user ? (enter 1)\n\n");
+    printf("You want to display all the followers of a certain user ? (enter 2)\n\n");
+    printf("You want to search for a user ? (enter 3)\n\n");
+    scanf("%d", &features);
+    while (features != 1 && features != 2 && features != 3)
+    {
+        printf("invalid input, please try again ...\n");
+        scanf("%d", &features);
+    }
+    switch (features)
+    {
+    case 1:
+        break;
+
+    case 2:
+        break;
+
+    case 3:
+        break;
+    }
     return 0;
 }
